@@ -23,7 +23,7 @@ class CurrencyConverterRepository{
       final response = await _apiService.getGetApiResponse(ApiEndpoints.currencyUrl);
       print(response.toString()+"asjkhdsjkdfhsak");
       if(response is! Map<String, dynamic>){
-        throw Exception("Saria nalla");
+        throw Exception("Exception");
       }
       final currencyModel = CurrencyModel.fromJson(response);
       print(currencyModel.toString());
